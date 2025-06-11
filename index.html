@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Loja de Veículos - Home</title>
+</head>
+<body>
+
+    <!-- Menu -->
+    <nav class="nav-menu">
+        <div class="logo"><h1>Veloce</h1></div>
+
+        <div class="div-menu">
+            <a href="index.html" id="menu-atual">Home</a>
+            <a href="estoque.html">Estoque</a>
+            <a href="cadastro.html">Financiamento</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Imagem de fundo -->
+    <header style="background-image: url('img/carro-fundo.png');" class="background-img">
+        <p style="font-size: 32px; margin-left: auto; margin-right: 20px;">Sua viagem começa aqui</p>
+    </header>
+
+    <!-- Seção de Ilustrações de Veículos -->
+    <section class="section-vehic">
+        <div style="background-image: url('img/scrambler.jpg');" class="background-vehic">
+            <span>Scrambler</span>
+        </div>
+
+        <div style="background-image: url('img/hatchback.jpg');" class="background-vehic">
+            <span>Hatchback</span>
+        </div>
+
+        <div style="background-image: url('img/sedan.jpg');" class="background-vehic">
+            <span>Sedan</span>
+        </div>
+
+        <div style="background-image: url('img/vintage.jpg');" class="background-vehic">
+            <span>Vintage</span>
+        </div>
+    </section>
+
+    <!-- Seção de Busca -->
+    <div class="div-search">
+
+        <h2 class="latest-results">Últimas novidades</h2>
+        
+        <form id="search-form">
+            <select name="marca">
+                <option value="">Selecione uma marca</option>
+            </select>
+
+            <select name="modelo">
+                <option value="">Selecione um modelo</option>
+            </select>
+
+            <button class="btn-search" type="submit"><img src="img/lupa.png" alt="pesquisar"></button>
+        </form>
+    </div>
+
+    <!-- Carros Buscados -->
+    <main id="search-results">
+        <p id="no-results" style="display: none; text-align: center; margin-top: 20px;">Nenhum veículo encontrado para a sua busca.</p>
+    </main>
+
+    <a class="estoque-btn" href="estoque.html">Veja todas as novidades</a>
+
+    <!-- Seção CTA -->
+    <div class="align">
+        <section class="container">
+            <div id="container-img">
+                <img src="img/financiamento.jpg" alt="usando celular">
+            </div>
+
+            <div class="container-content">
+                <h2>Quer financiar?</h2>
+                <div class="container-line"></div>
+                <p>Entenda como funciona o <strong>financiamento na Veloce</strong></p>   
+                <a href="">ACESSE E CONFIRA</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Depoimentos -->
+    <div class="align">
+        <div style="display: flex;">
+            <div class="feedback">
+                <p>"Realizei um sonho com a ajuda da equipe da Veloce! Atendimento de primeira, profissionais atenciosos e uma transparência que 
+                    transmite muita confiança. Só tenho a agradecer por toda dedicação. Super recomendo!"</p>
+                <div class="quote">
+                    <img src="img/depoimento1.png" alt="depoimento 1">
+                    <span style="color: white;">Carlos Henrique Dias</span>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <p>"Uma experiência incrível do início ao fim! A equipe da Veloce foi impecável no atendimento, sempre dispostos a ajudar e 
+                    esclarecer tudo com clareza. Parabéns pelo profissionalismo e pelo cuidado com o cliente!"</p>
+                <div class="quote">
+                    <img src="img/depoimento2.png" alt="depoimento 2">
+                    <span style="color: white;">Fernanda Lopes</span>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <p>"Desde o primeiro contato, fui tratada com muito respeito e atenção. A Veloce realmente se destaca pela excelência no atendimento 
+                    e pela qualidade dos veículos. Estou extremamente satisfeita com minha escolha!"</p>
+                <div class="quote">
+                    <img src="img/depoimento3.png" alt="depoimento 3">
+                    <span style="color: white;">Leonardo Silva</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <div class="logo" style="color: white;"><h1>Veloce</h1></div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Veloce. Todos os direitos autorais reservados</p>
+            <div class="footer-menu">
+                <a href="index.html" id="menu-atual">Home</a>
+                <a href="estoque.html">Estoque</a>
+                <a href="financiar.html">Financiamento</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

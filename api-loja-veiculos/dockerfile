@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+COPY api-loja-veiculos/*.csproj ./api-loja-veiculos/
+RUN dotnet restore ./api-loja-veiculos/api-loja-veiculos.csproj
+
+COPY api-loja-veiculos/. ./api-loja-veiculos/
+RUN dotnet publish ./api-loja-veiculos/api-loja-veiculos.csproj -c Release -o /app/publish
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+WORKDIR /app
+COPY --from=build /app/publish .
+
+ENV ASPNETCORE_URLS=http://+:10000
+EXPOSE 10000
+
+ENTRYPOINT ["dotnet", "api-loja-veiculos.dll"]
+
+
