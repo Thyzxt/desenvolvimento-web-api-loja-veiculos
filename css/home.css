@@ -19,7 +19,6 @@ p.visible, a.visible, h3.visible, h2.visible, li.visible, img.visible{
     transform: translateY(0);}
 
 .align{
-
     width: 100%;
     flex-direction: column;
     display: flex;
@@ -101,6 +100,28 @@ p.visible, a.visible, h3.visible, h2.visible, li.visible, img.visible{
     z-index: 5;
     transform: scale(1.1);}
 
+/* Marcas */
+.brands-cta{
+    color: #141414fa;
+    margin-top: 80px;
+    margin-left: 65px;
+    font-size: 30px;
+    font-weight: 700;}
+
+.brands{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 20%;}
+
+.brands img{
+    height: 45px;
+    width: 45px;}
+
+.brands h3{
+    font-size: 16px;}
+
 /* Seção de Busca */
 .div-search{
     margin-top: 50px;
@@ -112,9 +133,9 @@ p.visible, a.visible, h3.visible, h2.visible, li.visible, img.visible{
 
 .latest-results{
     color: #141414fa;
-    font-size: 32px;
+    font-size: 30px;
     margin-right: 400px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;}
 
 form{
