@@ -12,6 +12,30 @@
 .container-img img{
     height: 100%;}
 
+.ad-cards{
+    display: flex;
+    height: 120px;
+    width: 340px;
+    margin: 1%;
+    padding: 15px;}
+
+.ad-cards-img{
+    margin-top: 25px;}
+
+.ad-cards-content{
+    text-align: left;}
+
+.ad-cards-content p{
+    font-weight: 400;
+    margin-left: 10%;
+    width: 250px;
+    margin-right: 10%;
+    font-size: 15px;}
+
+.ad-cards-content h3{
+    width: 280px;
+    margin-left: 30px;}
+
 /* Seção CTA */
 .section-cta{
     display: flex;
@@ -57,30 +81,6 @@
 .cta-btn:hover{
     background-color: white;}
 
-.ad-cards{
-    display: flex;
-    height: 120px;
-    width: 340px;
-    margin: 1%;
-    padding: 15px;}
-
-.ad-cards-img{
-    margin-top: 25px;}
-
-.ad-cards-content{
-    text-align: left;}
-
-.ad-cards-content p{
-    font-weight: 400;
-    margin-left: 10%;
-    width: 250px;
-    margin-right: 10%;
-    font-size: 15px;}
-
-.ad-cards-content h3{
-    width: 280px;
-    margin-left: 30px;}
-
 .section-cards{
     margin-top: 100px;
     justify-content: center;
@@ -103,39 +103,169 @@
     height: 160px;
     text-align: justify;} 
 
-.simulator{
-
+.sim{
+    margin-bottom: 100px;
     margin-top: 100px;}
 
-.simulator h2{
+.sim h2{
     font-size: 28px;
     color: #141414fa;
     margin-left: 210px;}
 
-.form-simulator{
+form{
+    flex-direction: column;
+    display: flex;}
+
+.form-sim{
     
     margin: auto;
     border-radius: 15px;
     width: 930px;
     border: 1px solid rgb(161, 156, 156);
-    gap: 60px;}
+    gap: 10px;}
 
-.form-simulator section{
-    
+.form-sim section{
     display: flex;
     gap: 25px;}
 
-.form-simulator div{
+.form-sim div{
     display: flex;
     gap: 10px;
     margin-bottom: 40px;
     margin-top: 40px;
     flex-direction: column;}
 
-.form-simulator input{
+.form-sim input{
     padding-left: 15px;
     height: 45px;
     border: 1px solid rgb(161, 156, 156);
     font-size: 18px;
     border-radius: 10px;
     width: 380px;}
+
+.sim-btn{
+    background-color: #9c1717;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    height: 45px;
+    margin-bottom: 20px;
+    width: 300px;}
+
+.sim-btn:hover{
+    background-color: #801212;}
+
+@media (max-width: 780px){
+
+    .container{
+        margin-bottom: 500px;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;}
+    
+    .container h2{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 16px;}
+
+    .container p{
+        text-align: justify;
+        margin-left: 10%;
+        width: 80%;
+        font-size: 16px;}
+
+    .container-img{
+        margin-right: 0;
+        margin-top: 350px;
+        height: 400px;}
+
+    .ad-cards{
+        margin-left: 7%;
+        margin-bottom: 20px;
+        width: 80%;}
+
+    .ad-cards-img img{
+        margin-top: 0px;}
+
+    .ad-cards-content{
+        text-align: left;}
+
+    .ad-cards-content p{
+        width: 200px;
+        font-size: 14px;}
+
+    .ad-cards-content h3{
+        font-size: 16px;
+        margin-right: 60px;
+        width: 200px;}
+
+    /* Seção CTA */
+    .section-cta{
+        flex-direction: column;}
+
+    .cta-content{
+        text-align: center;
+        flex: 40%;}
+
+    .cta-content h2{
+        color: white;
+        font-size: 20px;}
+
+    .cta-content p{
+        font-size: 14px;
+        width: 320px;}
+
+    .cta-btn{
+        margin-bottom: 100px;}
+
+    .sim{
+        margin-bottom: 100px;
+        margin-top: 100px;}
+
+    .sim h2{
+        text-align: center;
+        font-size: 29px;
+        margin-left: 0px;}
+
+    form{
+        flex-direction: column;
+        display: flex;}
+
+    .form-sim{
+        
+        margin: auto;
+        border-radius: 15px;
+        width: 90%;
+        border: 1px solid rgb(161, 156, 156);
+        gap: 10px;}
+
+    .form-sim section{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;}
+
+    .form-sim div{
+        display: flex;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        flex-direction: column;}
+
+    .form-sim input{
+        width: 200px;}
+
+    .sim-btn{
+        margin-top: 20px;
+        font-size: 18px;
+        cursor: pointer;
+        height: 45px;
+        margin-bottom: 20px;
+        width: 120px;}
+
+    .sim-btn:hover{
+        background-color: #801212;}
+    
+    }

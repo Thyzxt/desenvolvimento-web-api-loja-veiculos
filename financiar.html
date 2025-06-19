@@ -116,36 +116,40 @@
     </section>
     -->
     
-    <div class="simulator">
+    <div class="sim">
         <div>
             <h2>Simulador financiamento de veículos</h2>
         </div>
 
-        <form class="form-simulator">
+        <form class="form-sim">
             <section>
                 <article>
                     <div>
-                        <label for="">Valor do veículo</label>
-                        <input type="text" inputmode="numeric">
+                        <label for="vehicle-price">Valor do veículo</label>
+                        <input type="text" id="vehicle-price" name="vehiclePrice" inputmode="numeric">
                     </div>
 
                     <div>
-                        <label for="">Valor de entrada</label>
-                        <input type="text" inputmode="numeric">
+                        <label for="down-payment">Valor de entrada</label>
+                        <input type="text" id="down-payment" name="downPayment" inputmode="numeric">
                     </div>
                 </article>
 
                 <article>
                     <div>
-                        <label for="">Taxa de juros (mensal)</label>
-                        <input type="text" inputmode="numeric">
+                        <label for="interest-rate">Taxa de juros (mensal)</label>
+                        <input type="text" id="interest-rate" name="interestRate" inputmode="numeric">
                     </div>
 
                     <div>
-                        <label for="">Número de parcelas</label>
-                        <input type="text" inputmode="numeric">
+                        <label for="installments">Número de parcelas</label>
+                        <input type="text" id="installments" name="installments" inputmode="numeric">
                     </div>
                 </article>
+            </section>
+
+            <section>
+                <button class="sim-btn" type="submit">Calcular</button>
             </section>
         </form>
     </div>
@@ -166,7 +170,6 @@
         </div>
     </footer>
 
-    <script src="js/api.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
